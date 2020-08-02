@@ -21,7 +21,7 @@ $(function () {
     })
 })
 
-//获取用户基本信息
+//获取用户基本信息(用户信息更新后需要重新调用 所以需要放在全局)
 function getUserInfo() {
     $.ajax({
         method: 'get',
