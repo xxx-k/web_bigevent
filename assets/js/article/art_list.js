@@ -140,4 +140,12 @@ $(function () {
 
         });
     })
+
+    // 修改页面跳转
+    $('tbody').on('click', '.btn-edit', function () {
+        var Id = $(this).attr('data-id')
+        // console.log("/article/art_edit.html?id=" + Id)
+        //页面跳转的时候要携带文章的id，到文章修改页面通过id过去文章详细信息
+        location.href = "/article/art_edit.html?id=" + Id
+    })
 });
